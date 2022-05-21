@@ -4,6 +4,10 @@
 </p>
 Cronómetro con minutos y segundos, con animación. 
 
+## Para verlo (deploy):
+
+    https://cronometro-circulo.vercel.app/
+
 ## Realizado con:
 - HTML
 - CSS
