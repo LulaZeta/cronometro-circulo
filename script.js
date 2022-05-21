@@ -48,5 +48,4 @@ const calculateTime = runningTime => {            //la función calculateTime va
     const display_minutes = total_minutes.toString().padStart(2, "0");  // padStart(2, "0"):::: esto es para q aparezca un cero delanta y no aparezca solo un numero ej: 01, 08 y no 1 , 8.9
                                                                         //no se hace módulo con los minutos para q lleguen a la cantidad q sea
     return `${display_minutes}:${display_seconds}`
-
 }

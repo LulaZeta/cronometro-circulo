@@ -40,7 +40,6 @@ main {
     from { transform: rotate(-90deg) translateX(60px); }
     to   { transform: rotate(270deg) translateX(60px); }
 }
-
 .buttons {
     margin-top: 10px;
     display: inline-flex;
