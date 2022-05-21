@@ -29,6 +29,13 @@ const start = () => {
     }, 1000) //actualizamos el cronómetro cada 1segundo (1000)
 }
 
-const calculateTime = runningTime => {
-    
+const calculateTime = runningTime => {            //la función calculateTime va a recibir runningTime
+    const total_seconds = Math.floor(runningTime / 1000);  //segundos totales 
+    const total_minutes = Math.floor(total_seconds / 60);  //minutos totales; segundos totales / 60;
+
+    const display_seconds = (total_seconds % 60).toString().padStart(2, "0"); //para mostrarlos, cuando llega a 60 seg (modulo 60) llega a 0
+    const display_minutes = total_minutes.toString().padStart(2, "0");  // padStart(2, "0"):::: esto es para q aparezca un cero delanta y no aparezca solo un numero ej: 01, 08 y no 1 , 8.9
+                                                                        //no se hace módulo con los minutos para q lleguen a la cantidad q sea
+    return `${display_minutes}:${display_seconds}`
+
 }
