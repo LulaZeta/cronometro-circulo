@@ -21,6 +21,14 @@ const pause = () => {
     clearInterval(stopwatchInterval);                   //borramos el intervalo
 }
 
+const stop = () => {
+    secondsSphere.style.transform = 'rotate(-90deg) translateX(60px)'; // Estilos: volvemos a poner la pelotita arriba de todo
+    secondsSphere.style.animation = 'none';                             //le sacamos la animación
+    playPauseButton.classList.remove('running');                           // se pone el boton de play..sacamos el de pausa
+    runningTime = 0;                                                      //volvemos a running a cero
+    clearInterval(stopwatchInterval);                                   //frenamos el intervalo
+    stopwatch.textContent = '00:00';                                    //le ponemos el texto 00:00
+}
 
 const start = () => {
     secondsSphere.style.animation = 'rotacion 60s linear infinite'; //la pelotita
