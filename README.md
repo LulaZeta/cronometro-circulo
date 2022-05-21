@@ -1,6 +1,6 @@
 # Cronómetro
 <p align="center">
-  <img src="./los3cronometros.jpg" width=1381 >
+  <img src="./los3cronometros_2.jpg" width=1381 >
 </p>
 Cronómetro con minutos y segundos, con animación. 
 
