@@ -17,8 +17,11 @@ const playPause = () => {
 }
 
 const pause = () => {
-
+    secondsSphere.style.animationPlayState = 'paused'; //cambiamos la animación de la pelotita a pausa
+    clearInterval(stopwatchInterval);                   //borramos el intervalo
 }
+
+
 const start = () => {
     secondsSphere.style.animation = 'rotacion 60s linear infinite'; //la pelotita
     let startTime = Date.now() - runningTime; //la 1era vez q se hace play es los milisegundos del momento (Date.now)-runningTime q en el inicio es 0
